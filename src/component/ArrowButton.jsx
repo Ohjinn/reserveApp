@@ -8,7 +8,7 @@ const ArrowButton = () => {
       onClick={() => {
         history.back();
       }}
-      style={{ position: "absolute", top: "50px", left: "50px", size: "large" }}
+      style={{ marginTop: "50px", marginLeft: "40px", size: "large" }}
     ></ArrowBackOutlinedIcon>
   </>
 };
