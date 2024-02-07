@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ArrowButton from "../component/ArrowButton";
 import RoomSelectListItem from "../component/RoomSelectListItem";
+import BlackButton from "../component/BlackButton";
 
 const RoomSelect = () => {
   const [isSelect, setIsSelect] = useState();
@@ -52,11 +53,21 @@ const RoomSelect = () => {
           />
         </div>
       </div>
-      <button
-        style={{ backgroundColor: "#000000", color: "white", margin: "10px" }}
-      >
-        다음
-      </button>
+      {isSelect ? (
+        <BlackButton
+          content={"다음"}
+          link={"/chairselect"}
+          linkTrue={true}
+          buttonColor={"#000000"}
+        />
+      ) : (
+        <BlackButton
+          content={"휴게실을 선택해주세요"}
+          link={"none"}
+          linkTrue={false}
+          buttonColor={"#ced4da"}
+        />
+      )}
     </div>
   );
 };
