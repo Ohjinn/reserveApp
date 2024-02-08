@@ -56,7 +56,7 @@ const RoomSelect = () => {
       {isSelect ? (
         <BlackButton
           content={"다음"}
-          link={"/chairselect"}
+          link={"/timeselect"}
           linkTrue={true}
           buttonColor={"#000000"}
         />

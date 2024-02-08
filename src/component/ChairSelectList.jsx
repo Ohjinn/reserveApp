@@ -1,12 +1,12 @@
-import { DUMMY_TIME } from "../util/times";
+import { DUMMY_CHAIR } from "../util/chairs";
 import TimeSelectListItem from "./TimeSelectListItem";
 
-const TimeSelectList = ({ isSelect, setIsSelect }) => {
+const ChairSelectList = ({ isSelect, setIsSelect }) => {
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-      {DUMMY_TIME.map((item) => (
+      {DUMMY_CHAIR.map((item) => (
         <TimeSelectListItem
-          key={DUMMY_TIME.indexOf(item)}
+          key={DUMMY_CHAIR.indexOf(item)}
           item={item}
           isSelect={isSelect}
           setIsSelect={setIsSelect}
@@ -16,4 +16,4 @@ const TimeSelectList = ({ isSelect, setIsSelect }) => {
   );
 };
 
-export default TimeSelectList;
+export default ChairSelectList;

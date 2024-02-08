@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ArrowButton from "../component/ArrowButton";
 import BlackButton from "../component/BlackButton";
+import ChairSelectList from "../component/ChairSelectList";
 
 const ChairSelect = () => {
   const [isSelect, setIsSelect] = useState();
@@ -24,10 +25,11 @@ const ChairSelect = () => {
             justifyContent: "space-between",
           }}
         >
-          사용하실 의자를 선택해주세요
+          의자를 선택해주세요
         </p>
-        <img src="map.png"/>
+        <img src="map.png" style={{ maxHeight: "400px", maxWidth: "300px", margin:"auto"}} />
       </div>
+      <ChairSelectList isSelect={isSelect} setIsSelect={setIsSelect} />
       {isSelect ? (
         <BlackButton
           content={"다음"}

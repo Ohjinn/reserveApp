@@ -28,10 +28,7 @@ const TimeSelect = () => {
         >
           시간을 선택해주세요
         </p>
-        <TimeSelectList 
-        isSelect={isSelect}
-        setIsSelect={setIsSelect}
-        />
+        <TimeSelectList isSelect={isSelect} setIsSelect={setIsSelect} />
       </div>
       {isSelect ? (
         <BlackButton
